@@ -1,0 +1,18 @@
+## ---------------------------------------------------------
+# split the values from the tt_content.layout field! 
+# in your template, add  <f:for each="{splitlayout}" as="layout">{layout} </f:for>
+## ---------------------------------------------------------
+
+
+
+
+lib.fluidContent{
+  dataProcessing.99 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor
+  dataProcessing.99{
+     if.isTrue.field = layout
+     delimiter =,
+     removeEmptyEntries = 1
+     fieldName = layout     
+     as = splitlayout
+  }
+}
