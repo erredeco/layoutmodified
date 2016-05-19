@@ -1,8 +1,8 @@
 <?php
 defined('TYPO3_MODE') or die();
 
-$GLOBALS['TCA']['tt_content']['columns']['layout']['config']['renderType'] = 'selectCheckBox';
-$GLOBALS['TCA']['tt_content']['columns']['layout']['config']['maxitems'] = 1000;
+$GLOBALS['TCA']['tt_content']['columns']['layout']['config']['renderType'] = 'selectMultipleSideBySide';
+$GLOBALS['TCA']['tt_content']['columns']['layout']['config']['maxitems'] = 50;
 /*
 $GLOBALS['TCA']['tt_content']['columns']['layout']['config']['items'] = array(
     array(
@@ -35,5 +35,6 @@ $GLOBALS['TCA']['tt_content']['columns']['layout']['config']['items'] = array(
     ),
 ); 
 
-$GLOBALS['TCA']['tt_content']['columns']['layout']['config']['default'] = '';
+
 */
+$GLOBALS['TCA']['tt_content']['columns']['layout']['config']['default'] = '';
