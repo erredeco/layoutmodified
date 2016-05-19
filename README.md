@@ -7,6 +7,23 @@ TYPO3 extension to alter the tt_content layout field behavior
 * This extension DON'T ADD any values to layout on the TYPO3 Backend! This means that the values saved will be by default "0", "1", "2"
   It is up to you to write the proper Page TSConfig
   
+Note that the TS Setup added is:
+``` 
+lib.fluidContent{
+  dataProcessing.99 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor
+  dataProcessing.99{
+     if.isTrue.field = layout
+     delimiter =,
+     removeEmptyEntries = 1
+     fieldName = layout     
+     as = splitlayout
+  }
+}
+```  
+So please, use a different position for the dataProcessing array if 99 is already in use! 
+  
+  
+  
 An example:
 
 ```
