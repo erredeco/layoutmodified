@@ -1,8 +1,14 @@
 <?php
-if (!defined('TYPO3_MODE')) {
-	die ('Access denied.');
-}
+defined('TYPO3_MODE') || die();
 
-/* Add default Static Typoscript */
-TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Add multiple layout classes');
+/**
+ * Prevents defining global variables
+ */
+call_user_func(function()
+{
+    /**
+     * Temporary variables
+     */
+
+});
 
