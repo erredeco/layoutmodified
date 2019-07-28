@@ -1,7 +1,6 @@
 # layoutmodified
 TYPO3 extension to alter the tt_content layout field behavior
 
-
 ## usage
 * install extension
 * add TS (include static from extension) BEFORE bhsiteconf
