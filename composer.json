@@ -1,0 +1,22 @@
+{
+    "name": "erredeco/layoutmodified",
+    "type": "typo3-cms-extension",
+    "description": "This extension changes tt_content.layout into a multiselect that allows selection of multiple class that will render into fluid_styled_content elements as CSS classes",
+    "license": "GPL-2.0-or-later",
+    "keywords": ["TYPO3 CMS"],    
+    "version": "v0.0.3",
+    "authors": [
+        {
+            "name": "Riccardo De Contardi",
+            "email": "erredeco@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Erredeco\\LayoutModified\\": "Classes"
+        }
+    },
+    "require": {
+        "typo3/cms-core": "^10"
+    }
+}
