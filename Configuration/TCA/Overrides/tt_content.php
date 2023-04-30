@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') or die();
+defined('TYPO3') or die();
 
 $GLOBALS['TCA']['tt_content']['columns']['layout']['config']['renderType'] = 'selectMultipleSideBySide';
 $GLOBALS['TCA']['tt_content']['columns']['layout']['config']['maxitems'] = 50;
