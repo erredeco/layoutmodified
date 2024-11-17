@@ -4,7 +4,7 @@
     "description": "This extension changes tt_content.layout into a multiselect that allows selection of multiple class that will render into fluid_styled_content elements as CSS classes",
     "license": "GPL-2.0-or-later",
     "keywords": ["TYPO3 CMS"],    
-    "version": "v0.0.3",
+    "version": "v0.0.4",
     "authors": [
         {
             "name": "Riccardo De Contardi",
