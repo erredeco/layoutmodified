@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'This extension changes tt_content.layout into a multiselect that allows selection of multiple class that will render into fluid_styled_content elements as CSS classes',
 	'category' => 'misc',
 	'shy' => 0,
-	'version' => '0.0.3',
+	'version' => '0.0.4',
 	'dependencies' => 'cms,extbase,fluid',
 	'conflicts' => '',
 	'priority' => '',
@@ -34,7 +34,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '11.5.0-12.99.99'
+			'typo3' => '12.4.0-13.4.99'
 		),
 		'conflicts' => array(
 		),
